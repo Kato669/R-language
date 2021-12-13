@@ -1,0 +1,19 @@
+---
+title: "emp"
+author: "james kato"
+date: "11/11/2021"
+output: html_document
+---
+
+```{r 
+#getting mean BMI based on gender 
+data %>% select(name,height,mass,gender) %>% filter(mass >60) %>% mutate(height = height/100) %>% mutate(BMI = mass/height^2) %>% group_by(gender) %>% summarise(average_BMI = mean(BMI))
+}
+```{r
+}
+```{r}
+
+```
+
+```
+
